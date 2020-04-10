@@ -1,0 +1,28 @@
+.card{
+    border: none;
+    padding: 10px;    
+}
+
+.container{
+font-family: 'Helvetica', Helvetica, monospace;
+}
+
+input{
+    border-radius: 15px;
+    
+}    
+
+.navbar{
+    background: white;
+    border-style: none none solid none;
+    border-color: black;
+    border-width: 1px;
+}
+.productos {
+    background-color: white;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+
+

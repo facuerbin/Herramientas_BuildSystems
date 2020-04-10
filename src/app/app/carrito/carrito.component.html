@@ -1,0 +1,36 @@
+<div class="container">
+  <app-navbar></app-navbar>
+  <br>
+
+  <div class="row contenedor container">
+    <div class="col-sm-6">
+      <div class="row" *ngFor="let carro of car">
+          <div class="col-sm-6">
+              <div class="card">
+                <img class="card-img-top shadow" [src]="'../../assets/'+ carro.imagen" alt="Card image cap" width="10%">
+              </div>
+          </div>
+              <div class="col-sm-6">
+                <p><b>{{carro.nombre}}</b></p>
+                <p><b>Unidades: </b>{{carro.unidad}}</p>
+                <p><b>Subtotal: </b>${{carro.subtotal}}.00</p>
+              </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6">
+      <br>
+      <h4> <b>Total: </b>${{carro.total}}.00</h4>
+      <br>
+      <div class="row">
+        <div class="col-sm-3">
+            <button class="btn btn-danger btn-lg" (click)="cancelar()">Volver</button>
+        </div>
+        <div class="col-sm-2">
+            <button class="btn btn-success btn-lg" (click)="pagar()">Pagar</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

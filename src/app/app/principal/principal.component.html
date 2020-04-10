@@ -1,0 +1,43 @@
+<div class="container">
+  <app-navbar></app-navbar>
+  <br>
+      
+  <nav class="navbar">
+    <div class="col-9">
+      <h3>Catálogo de Productos</h3>
+    </div>
+    <div class="col-3">
+      <br>
+      <h5>¿Qué esta buscando?</h5>
+      <br>   
+      <form class="form-inline d-flex justify-content-center md-form form-sm mt-0">
+        <input name="buscador"class="mr-sm-9" type="search" placeholder="Buscar.." aria-label="Search" (keyup)="buscador(texto.value)" #texto>
+      </form>
+    </div>
+      <br>
+  </nav>
+        
+  <div class="justify-content-start">
+    <div class="productos">
+      <div *ngFor="let producto of subproducto" class="col-sm-3 shadow-sm colspan">
+          <br>
+          <div  class="card text-black bg-white">
+            <img class="card-img-top" [src]="'../../assets/' + producto.imagen" alt="Card image cap" >
+            <div class="card-body">
+              <h5 class="card-title">{{producto.nombre}}</h5>
+              <p class="card-text"><b>Precio:</b> ${{producto.precio}}</p>
+              <p class="card-text"><b>Unidades Disponibles:</b><br>{{producto.unidades}}</p>
+
+              <div class="btn-group" role="group" aria-label="Button group">
+                <button class="btn btn-primary btn-md" (click)="vermas(producto.nombre)" >Ver Más
+                </button>
+                <button class="btn btn-warning btn-md" style="color: white" (click)="agregar(producto.imagen,producto.nombre,producto.precio, uni.value)">Añadir
+                </button>
+                <input class="col-sm-4" type="number" value="1" min="1" [max]="producto.unidades" #uni>
+              </div>
+            </div>
+          </div> 
+      </div>
+    </div>
+  </div>
+</div>

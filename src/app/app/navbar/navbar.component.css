@@ -1,0 +1,53 @@
+nav{
+  font-weight: bolder;
+  font-size: 17px;
+  font-family: 'Helvetica', Helvetica, monospace;
+  background: linear-gradient(to bottom, #ffffff 90%, #cccccc 100%);
+  
+}
+
+a:hover{
+  color:white;
+}
+
+
+
+
+#contorno{
+  
+    position: relative;
+}
+
+a{
+  color:black;
+
+}
+
+#uno{
+   
+ 
+  position: relative;
+  z-index: 50;
+  color:black;
+
+}
+
+
+#dos{
+    
+  color: orangered;
+  position: absolute;
+  top: 20%;
+  z-index: 100;
+  background: transparent;
+}
+
+#tres{
+    color: white;
+  position: absolute;
+  top: 40%;
+  left: 35%;
+  z-index: 100;
+  background: transparent;  
+  color:black;
+}
