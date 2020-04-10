@@ -1,0 +1,17 @@
+Evaluación Final Herramientas, Biuld Systems yTecnologías Emergetes
+Facundo Erbin
+
+Tienda Angular
+
+1) Abrir linea de comando en la carpeta del protecto.
+
+2) npm install
+
+3) ng serve
+
+4) Abrir navegador en localhost:4200
+
+5) 	Usuario: usuario@mail.com
+	Password: nextu
+	Usuario: facuerbin@mail.com
+	Password: 1234
